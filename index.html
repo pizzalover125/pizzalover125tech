@@ -7,15 +7,96 @@
 
     <!--CSS Modules -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/pizza.png">
 
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Raleway:400,300,600');
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Raleway', sans-serif !important;
+      }
+
+      header, section {
+        padding-top: 5rem;
+      }
+
+      a {
+        color: black;
+        text-decoration: underline;
+      }
+
+      a:hover {
+        color: black;
+        background-image: linear-gradient(to right, black, black);
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: 100% 2px;
+        text-decoration: none !important;
+      }
+
+      .social-icons a {
+        color: black!important;
+        background: none;
+      }
+
+      .user-image {
+        width: 140px;
+        height: 140px;
+      }
+
+      @media (max-width: 767px) {
+        header .col-lg-2 {
+          padding-bottom: 3rem;
+        }
+      }
+
+      :root {
+        --background-color: #fff;
+        --text-color: #000;
+        --link-color: #000;
+      }
+
+      [data-bs-theme="dark"] {
+        --background-color: #121212;
+        --text-color: #ffffff;
+        --link-color: #ffffff;
+
+        .dark-mode-dark {
+          color: black;
+        }
+
+        .dark-mode-light {
+          color: white;
+        }
+      }
+
+      body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+
+      a {
+        color: var(--link-color);
+      }
+
+      .social-icons a {
+        color: var(--link-color) !important;
+      }
+
+      .dark-mode-dark .social-icons a {
+        color: var(--link-color) !important;
+      }
+    </style>
   </head>
   <body>
-
+    
     <!-- Profile -->
     <header>
       <div class="container">
@@ -31,6 +112,7 @@
             <ul class="list-inline text-lg-right social-icons">
               <li class="list-inline-item"><a href="https://github.com/pizzalover125" target="_blank"><i class="fab fa-github"></i></a></li>
               <li class="list-inline-item"><a href="mailto:chessthinker600@gmail.com" target="_blank"><i class="fas fa-at"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fas fa-adjust"></i></a></li>
             </ul>
           </div>
         </div>
@@ -71,9 +153,9 @@
     </section>
 
     <!-- Projects -->
-    <section>
+    <section class="dark-mode-dark">
       <div class="container">
-        <h2 class="text-center">Projects:</h2>
+        <h2 class="text-center dark-mode-light">Projects:</h2>
         <div class="tab-pane fade show mt-4" id="projects" role="tabpanel">
           <div class="row justify-content-lg-center">
             <div class="col-lg-8 pb-3">
@@ -121,8 +203,8 @@
     </section>
 
     <!-- Experience -->
-    <section>
-      <h2 class="text-center">Experience</h2>
+    <section class="dark-mode-dark">
+      <h2 class="text-center dark-mode-light">Experience</h2>
       <div class="container">
         <div class="row justify-content-lg-center">
           <div class="col-lg-8 pb-3">
@@ -191,5 +273,25 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const themeToggle = document.querySelector('.fa-adjust');
+        const htmlElement = document.documentElement;
+    
+        // Load theme from localStorage
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          htmlElement.dataset.bsTheme = savedTheme;
+        }
+    
+        themeToggle.addEventListener('click', function () {
+          const currentTheme = htmlElement.dataset.bsTheme;
+          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+          htmlElement.dataset.bsTheme = newTheme;
+          localStorage.setItem('theme', newTheme);
+        });
+      });
+    </script>
+    
   </body>
 </html>
