@@ -17,10 +17,12 @@
 
       html {
         scroll-behavior: smooth;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
       }
 
       body {
         font-family: 'Raleway', sans-serif !important;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
       }
 
       header, section {
@@ -30,6 +32,7 @@
       a {
         color: black;
         text-decoration: underline;
+        transition: color 0.3s ease-in-out;
       }
 
       a:hover {
@@ -44,6 +47,7 @@
       .social-icons a {
         color: black!important;
         background: none;
+        transition: color 0.3s ease-in-out;
       }
 
       .user-image {
@@ -93,6 +97,7 @@
       .dark-mode-dark .social-icons a {
         color: var(--link-color) !important;
       }
+
     </style>
   </head>
   <body>
@@ -155,7 +160,7 @@
     <!-- Projects -->
     <section class="dark-mode-dark">
       <div class="container">
-        <h2 class="text-center dark-mode-light">Projects:</h2>
+        <h2 class="text-center dark-mode-light">Projects</h2>
         <div class="tab-pane fade show mt-4" id="projects" role="tabpanel">
           <div class="row justify-content-lg-center">
             <div class="col-lg-8 pb-3">
@@ -163,9 +168,9 @@
                 <div class="card-body">
                   <h4 class="card-title">Cognified</h4>
                   <p class="card-text">An application containing basic games that have been proven to improve cognitive ability. Designed for all people, but especially effective in seniors. Made with HTML, CSS, JavaScript, and Capacitor.js for mobile support.</p>
-                  <ul class="list-inline social-icons">
-                    <li class="list-inline-item"><a href="https://pizzalover125.github.io/cognified/build/index.html" target="_blank"><i class="fas fa-link"></i></a></li>
-                    <li class="list-inline-item"><a href="https://github.com/pizzalover125/cognified" target="_blank"><i class="fab fa-github"></i></a></li>
+                  <ul class="list-inline social-icons>
+                    <li class="list-inline-item dark-mode-dark"><a href="https://pizzalover125.github.io/cognified/build/index.html" target="_blank"><i class="fas fa-link"></i></a></li>
+                    <li class="list-inline-item dark-mode-dark"><a href="https://github.com/pizzalover125/cognified" target="_blank"><i class="fab fa-github"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -177,8 +182,8 @@
                   <h4 class="card-title">SkimVid</h4>
                   <p class="card-text">A basic video summarizing web app that takes in a youtube URL and outputs a summary of the video, in a language chosen. Made with Flask, Several Python APIs, HTML, CSS, and Gemini API. *Note that the application will take around a minute to boot up, due to the free server.</p>
                   <ul class="list-inline social-icons">
-                    <li class="list-inline-item"><a href="https://video-summary-zayq.onrender.com/" target="_blank"><i class="fas fa-link"></i></a></li>
-                    <li class="list-inline-item"><a href="https://github.com/pizzalover125/video-summary" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li class="list-inline-item dark-mode-dark"><a href="https://video-summary-zayq.onrender.com/" target="_blank"><i class="fas fa-link"></i></a></li>
+                    <li class="list-inline-item dark-mode-dark"><a href="https://github.com/pizzalover125/video-summary" target="_blank"><i class="fab fa-github"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -190,8 +195,8 @@
                   <h4 class="card-title">Digit Predictor</h4>
                   <p class="card-text">A CNN (Convolutional Neural Network) Model that predicts handwritten digits from 0 to 9, with an HTML wrapper. Made with Python, TensorFlow Python Library, TensorFlow.js, HTML, CSS, and JavaScript.</p>
                   <ul class="list-inline social-icons">
-                    <li class="list-inline-item"><a href="https://supercoolai.netlify.app/" target="_blank"><i class="fas fa-link"></i></a></li>
-                    <li class="list-inline-item"><a href="https://github.com/pizzalover125/digitPredictor" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li class="list-inline-item dark-mode-dark"><a href="https://supercoolai.netlify.app/" target="_blank"><i class="fas fa-link"></i></a></li>
+                    <li class="list-inline-item dark-mode-dark"><a href="https://github.com/pizzalover125/digitPredictor" target="_blank"><i class="fab fa-github"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -204,7 +209,7 @@
 
     <!-- Experience -->
     <section class="dark-mode-dark">
-      <h2 class="text-center dark-mode-light">Experience</h2>
+      <h2 class="text-center dark-mode-light">Experience:</h2>
       <div class="container">
         <div class="row justify-content-lg-center">
           <div class="col-lg-8 pb-3">
@@ -220,7 +225,7 @@
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title">Certifications</h4>
-                <p>In the image carousel below, you can seem some of the certifications I have completed. To interact, simply press the right side to go forward and the left side to go backward.</p>
+                <p>In the image carousel below, you can view some of the certifications I have completed. To interact, simply press the right side to go forward and the left side to go backward.</p>
                   
                 <!-- Image Carousel -->
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
