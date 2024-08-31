@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="utf-8">
-    <title>pizzalover125's portfolio</title>
+    <title>pizzalover125's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio of pizzalover125, an aspiring programmer with skills in various technologies. Explore projects, skills, and experiences.">
 
@@ -119,20 +119,21 @@
             }
         }
 
-        /* Create a class for elements that should animate into view */
         .animate-in {
             opacity: 0;
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            transition: opacity 0.9s ease-out, transform 0.9s ease-out;
             transform: translateY(20px);
         }
 
-        /* Apply the animation when the element is visible */
         .animate-in.visible {
             opacity: 1;
             transform: translateY(0);
-            animation: fadeIn 0.6s ease-out;
+            animation: fadeIn 0.9s ease-out;
         }
 
+        .card-body {
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -162,7 +163,7 @@
     <!-- Skills -->
     <section>
         <div class="container text-center">
-            <h2 class="animate-in">Skills:</h2>
+            <h2 class="animate-in">Skills</h2>
             <div class="row">
                 <div class="col-md-6 mb-4 animate-in">
                     <h4>Frontend Frameworks</h4>
@@ -178,7 +179,7 @@
                 </div>
                 <div class="col-md-6 mb-4 animate-in">
                     <h4>Databases</h4>
-                    <img class="mb-4" src="https://skillicons.dev/icons?i=supabase,sqlite">
+                    <img class="mb-4" src="https://skillicons.dev/icons?i=sqlite,supabase">
                 </div>
                 <div class="col-md-6 mb-4 animate-in">
                     <h4>AI/ML</h4>
@@ -186,7 +187,7 @@
                 </div>
                 <div class="col-md-6 mb-4 animate-in">
                     <h4>Tooling</h4>
-                    <img class="mb-4" src="https://skillicons.dev/icons?i=github,vscode,windows,linux,raspberrypi">
+                    <img class="mb-4" src="https://skillicons.dev/icons?i=github,vscode,linux,windows,raspberrypi">
                 </div>
             </div>
         </div>
@@ -195,14 +196,14 @@
     <!-- Projects -->
     <section class="dark-mode-dark">
         <div class="container">
-            <h2 class="text-center dark-mode-light animate-in">Projects:</h2>
+            <h2 class="text-center dark-mode-light animate-in">Projects</h2>
             <div class="tab-pane fade show mt-4" id="projects" role="tabpanel">
                 <div class="row justify-content-lg-center">
                     <div class="col-lg-8 pb-3 animate-in">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Cognified</h4>
-                                <p class="card-text">An application containing basic games that have been proven to improve cognitive ability. Designed for all people, but especially effective in seniors. Made with HTML, CSS, JavaScript, and Capacitor.js for mobile support.</p>
+                                <p class="card-text">Cognified is a mobile-friendly application designed to enhance cognitive abilities through interactive games. Suitable for all ages, it aims to stimulate mental agility with a user-friendly interface. Developed using HTML, CSS, JavaScript, and Capacitor.js for mobile support.</p>
                                 <ul class="list-inline social-icons">
                                     <li class="list-inline-item"><a href="https://pizzalover125.github.io/cognified/build/index.html" target="_blank"><i class="fas fa-link"></i></a></li>
                                     <li class="list-inline-item"><a href="https://github.com/pizzalover125/cognified" target="_blank"><i class="fab fa-github"></i></a></li>
@@ -215,7 +216,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">SkimVid</h4>
-                                <p class="card-text">A basic video summarizing web app that takes in a youtube URL and outputs a summary of the video, in a language chosen. Made with Flask, Several Python APIs, HTML, CSS, and Gemini API. *Note that the application will take around a minute to boot up, due to the free server.</p>
+                                <p class="card-text">SkimVid simplifies video content by summarizing YouTube videos based on the provided URL. It supports various languages and is built using Flask, several Python APIs, HTML, CSS, and the Gemini API. Note that the initial load time may be longer due to server constraints.</p>
                                 <ul class="list-inline social-icons">
                                     <li class="list-inline-item"><a href="https://video-summary-zayq.onrender.com/" target="_blank"><i class="fas fa-link"></i></a></li>
                                     <li class="list-inline-item"><a href="https://github.com/pizzalover125/video-summary" target="_blank"><i class="fab fa-github"></i></a></li>
@@ -228,7 +229,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Digit Predictor</h4>
-                                <p class="card-text">A CNN (Convolutional Neural Network) Model that predicts handwritten digits from 0 to 9, with an HTML wrapper. Made with Python, TensorFlow Python Library, TensorFlow.js, HTML, CSS, and JavaScript.</p>
+                                <p class="card-text">This project features a Convolutional Neural Network (CNN) model that classifies handwritten digits from 0 to 9. It includes a web interface built with HTML, CSS, JavaScript, and TensorFlow.js, allowing users to interact with the model in real-time.</p>
                                 <ul class="list-inline social-icons">
                                     <li class="list-inline-item"><a href="https://supercoolai.netlify.app/" target="_blank"><i class="fas fa-link"></i></a></li>
                                     <li class="list-inline-item"><a href="https://github.com/pizzalover125/digitPredictor" target="_blank"><i class="fab fa-github"></i></a></li>
@@ -251,7 +252,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">CyberSeniors Mentor</h4>
-                            <p class="card-text">CyberSeniors is a "non-profit organization that offers technology training to older adults and helps students develop digital mentoring skills." I personally assisted seniors for 40+ hours with miscellaneous tech needs.</p>
+                            <p class="card-text">CyberSeniors is a non-profit organization dedicated to providing technology training to older adults. I have contributed over 40 hours assisting seniors with various tech-related issues, helping bridge the digital divide and enhance their technological skills.</p>
                         </div>
                     </div>
                 </div>
@@ -259,10 +260,10 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Certifications</h4>
-                            <p>In the image carousel below, you can see some of the certifications I have completed. To interact, simply press the right side to go forward and the left side to go backward.</p>
+                            <p>Below are some of the certifications I have earned. Use the carousel controls to navigate through the images and see the full range of my certifications.</p>
 
                             <!-- Image Carousel -->
-                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                                 <!-- Images -->
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
@@ -289,13 +290,13 @@
                                 </div>
 
                                 <!-- Controls -->
-                                <a class="carousel-control-prev text-dark" href="#myCarousel" role="button" data-slide="prev">
+                                <a class="carousel-control-prev text-dark" href="#myCarousel" role="button" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
+                                    <span class="visually-hidden">Previous</span>
                                 </a>
-                                <a class="carousel-control-next text-dark" href="#myCarousel" role="button" data-slide="next">
+                                <a class="carousel-control-next text-dark" href="#myCarousel" role="button" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
+                                    <span class="visually-hidden">Next</span>
                                 </a>
                             </div>
                         </div>
@@ -308,7 +309,7 @@
     <!-- Footer -->
     <footer class="dark-mode-dark text-center py-4">
         <div class="container">
-            <p class="dark-mode-light mb-0 animate-in">Crafted by pizzalover125.</p>
+            <p class="dark-mode-light mb-0 animate-in">Crafted with passion by pizzalover125. For collaboration and inquiries, feel free to connect via the links below.</p>
             <ul class="list-inline social-icons mt-3">
                 <li class="list-inline-item"><a href="https://github.com/pizzalover125" target="_blank"><i class="fab fa-github"></i></a></li>
                 <li class="list-inline-item"><a href="mailto:chessthinker600@gmail.com" target="_blank"><i class="fas fa-at"></i></a></li>
