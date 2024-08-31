@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--CSS Modules -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    
-    <!-- Favicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="icon" type="image/png" href="images/pizza.png">
 
     <style>
@@ -17,12 +14,10 @@
 
       html {
         scroll-behavior: smooth;
-        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
       }
 
       body {
         font-family: 'Raleway', sans-serif !important;
-        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
       }
 
       header, section {
@@ -32,7 +27,6 @@
       a {
         color: black;
         text-decoration: underline;
-        transition: color 0.3s ease-in-out;
       }
 
       a:hover {
@@ -47,7 +41,6 @@
       .social-icons a {
         color: black!important;
         background: none;
-        transition: color 0.3s ease-in-out;
       }
 
       .user-image {
@@ -98,6 +91,20 @@
         color: var(--link-color) !important;
       }
 
+      footer {
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+
+      footer a {
+        color: var(--link-color);
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        color: var(--link-color);
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
@@ -112,7 +119,7 @@
           <div class="col-lg-7">
             <h2>pizzalover125</h2>
             <p class="text-justify">
-              An aspiring programmer looking to change the world with his code, one line at a time. 
+              An aspiring programmer looking to change the world with his code, one line at a time. While I haven’t changed the world yet, each project I build, skill I acquire, and experience I gain brings me closer to that goal. Explore my journey and see what I’ve accomplished so far below:
             </p>
             <ul class="list-inline text-lg-right social-icons">
               <li class="list-inline-item"><a href="https://github.com/pizzalover125" target="_blank"><i class="fab fa-github"></i></a></li>
@@ -160,7 +167,7 @@
     <!-- Projects -->
     <section class="dark-mode-dark">
       <div class="container">
-        <h2 class="text-center dark-mode-light">Projects</h2>
+        <h2 class="text-center dark-mode-light">Projects:</h2>
         <div class="tab-pane fade show mt-4" id="projects" role="tabpanel">
           <div class="row justify-content-lg-center">
             <div class="col-lg-8 pb-3">
@@ -168,9 +175,9 @@
                 <div class="card-body">
                   <h4 class="card-title">Cognified</h4>
                   <p class="card-text">An application containing basic games that have been proven to improve cognitive ability. Designed for all people, but especially effective in seniors. Made with HTML, CSS, JavaScript, and Capacitor.js for mobile support.</p>
-                  <ul class="list-inline social-icons>
-                    <li class="list-inline-item dark-mode-dark"><a href="https://pizzalover125.github.io/cognified/build/index.html" target="_blank"><i class="fas fa-link"></i></a></li>
-                    <li class="list-inline-item dark-mode-dark"><a href="https://github.com/pizzalover125/cognified" target="_blank"><i class="fab fa-github"></i></a></li>
+                  <ul class="list-inline social-icons">
+                    <li class="list-inline-item"><a href="https://pizzalover125.github.io/cognified/build/index.html" target="_blank"><i class="fas fa-link"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/pizzalover125/cognified" target="_blank"><i class="fab fa-github"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -182,8 +189,8 @@
                   <h4 class="card-title">SkimVid</h4>
                   <p class="card-text">A basic video summarizing web app that takes in a youtube URL and outputs a summary of the video, in a language chosen. Made with Flask, Several Python APIs, HTML, CSS, and Gemini API. *Note that the application will take around a minute to boot up, due to the free server.</p>
                   <ul class="list-inline social-icons">
-                    <li class="list-inline-item dark-mode-dark"><a href="https://video-summary-zayq.onrender.com/" target="_blank"><i class="fas fa-link"></i></a></li>
-                    <li class="list-inline-item dark-mode-dark"><a href="https://github.com/pizzalover125/video-summary" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li class="list-inline-item"><a href="https://video-summary-zayq.onrender.com/" target="_blank"><i class="fas fa-link"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/pizzalover125/video-summary" target="_blank"><i class="fab fa-github"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -195,8 +202,8 @@
                   <h4 class="card-title">Digit Predictor</h4>
                   <p class="card-text">A CNN (Convolutional Neural Network) Model that predicts handwritten digits from 0 to 9, with an HTML wrapper. Made with Python, TensorFlow Python Library, TensorFlow.js, HTML, CSS, and JavaScript.</p>
                   <ul class="list-inline social-icons">
-                    <li class="list-inline-item dark-mode-dark"><a href="https://supercoolai.netlify.app/" target="_blank"><i class="fas fa-link"></i></a></li>
-                    <li class="list-inline-item dark-mode-dark"><a href="https://github.com/pizzalover125/digitPredictor" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li class="list-inline-item"><a href="https://supercoolai.netlify.app/" target="_blank"><i class="fas fa-link"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/pizzalover125/digitPredictor" target="_blank"><i class="fab fa-github"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -209,7 +216,7 @@
 
     <!-- Experience -->
     <section class="dark-mode-dark">
-      <h2 class="text-center dark-mode-light">Experience:</h2>
+      <h2 class="text-center dark-mode-light">Experience</h2>
       <div class="container">
         <div class="row justify-content-lg-center">
           <div class="col-lg-8 pb-3">
@@ -225,7 +232,7 @@
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title">Certifications</h4>
-                <p>In the image carousel below, you can view some of the certifications I have completed. To interact, simply press the right side to go forward and the left side to go backward.</p>
+                <p>In the image carousel below, you can seem some of the certifications I have completed. To interact, simply press the right side to go forward and the left side to go backward.</p>
                   
                 <!-- Image Carousel -->
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -273,11 +280,21 @@
       </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="dark-mode-dark text-center py-4">
+      <div class="container">
+        <p class="dark-mode-light mb-0">Crafted by pizzalover125. </p>
+        <ul class="list-inline social-icons mt-3">
+          <li class="list-inline-item"><a href="https://github.com/pizzalover125" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li class="list-inline-item"><a href="mailto:chessthinker600@gmail.com" target="_blank"><i class="fas fa-at"></i></a></li>
+        </ul>
+      </div>
+    </footer>
 
     <!-- JS Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         const themeToggle = document.querySelector('.fa-adjust');
