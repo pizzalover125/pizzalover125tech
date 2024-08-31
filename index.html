@@ -1,294 +1,319 @@
 <!DOCTYPE html>
-<html lang="en"  data-bs-theme="dark">
-  <head>
+<html lang="en" data-bs-theme="dark">
+<head>
     <meta charset="utf-8">
     <title>pizzalover125's portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of pizzalover125, an aspiring programmer with skills in various technologies. Explore projects, skills, and experiences.">
 
-    <!--CSS Modules -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- CSS Modules -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="icon" type="image/png" href="images/pizza.png">
 
     <style>
-      @import url('https://fonts.googleapis.com/css?family=Raleway:400,300,600');
+        @import url('https://fonts.googleapis.com/css?family=Raleway:400,300,600');
 
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        font-family: 'Raleway', sans-serif !important;
-      }
-
-      header, section {
-        padding-top: 5rem;
-      }
-
-      a {
-        color: black;
-        text-decoration: underline;
-      }
-
-      a:hover {
-        color: black;
-        background-image: linear-gradient(to right, black, black);
-        background-position: bottom left;
-        background-repeat: no-repeat;
-        background-size: 100% 2px;
-        text-decoration: none !important;
-      }
-
-      .social-icons a {
-        color: black!important;
-        background: none;
-      }
-
-      .user-image {
-        width: 140px;
-        height: 140px;
-      }
-
-      @media (max-width: 767px) {
-        header .col-lg-2 {
-          padding-bottom: 3rem;
-        }
-      }
-
-      :root {
-        --background-color: #fff;
-        --text-color: #000;
-        --link-color: #000;
-      }
-
-      [data-bs-theme="dark"] {
-        --background-color: #121212;
-        --text-color: #ffffff;
-        --link-color: #ffffff;
-
-        .dark-mode-dark {
-          color: black;
+        html {
+            scroll-behavior: smooth;
         }
 
-        .dark-mode-light {
-          color: white;
+        body {
+            font-family: 'Raleway', sans-serif !important;
         }
-      }
 
-      body {
-        background-color: var(--background-color);
-        color: var(--text-color);
-      }
+        header, section {
+            padding-top: 5rem;
+        }
 
-      a {
-        color: var(--link-color);
-      }
+        a {
+            color: black;
+            text-decoration: underline;
+        }
 
-      .social-icons a {
-        color: var(--link-color) !important;
-      }
+        a:hover {
+            color: black;
+            background-image: linear-gradient(to right, black, black);
+            background-position: bottom left;
+            background-repeat: no-repeat;
+            background-size: 100% 2px;
+            text-decoration: none !important;
+        }
 
-      .dark-mode-dark .social-icons a {
-        color: var(--link-color) !important;
-      }
+        .social-icons a {
+            color: black !important;
+            background: none;
+        }
 
-      footer {
-        background-color: var(--background-color);
-        color: var(--text-color);
-      }
+        .user-image {
+            width: 140px;
+            height: 140px;
+        }
 
-      footer a {
-        color: var(--link-color);
-        text-decoration: none;
-      }
+        @media (max-width: 767px) {
+            header .col-lg-2 {
+                padding-bottom: 3rem;
+            }
+        }
 
-      footer a:hover {
-        color: var(--link-color);
-        text-decoration: underline;
-      }
+        :root {
+            --background-color: #fff;
+            --text-color: #000;
+            --link-color: #000;
+        }
+
+        [data-bs-theme="dark"] {
+            --background-color: #121212;
+            --text-color: #ffffff;
+            --link-color: #ffffff;
+
+            .dark-mode-dark {
+                color: black;
+            }
+
+            .dark-mode-light {
+                color: white;
+            }
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        a {
+            color: var(--link-color);
+        }
+
+        .social-icons a {
+            color: var(--link-color) !important;
+        }
+
+        .dark-mode-dark .social-icons a {
+            color: var(--link-color) !important;
+        }
+
+        footer {
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        footer a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--link-color);
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Create a class for elements that should animate into view */
+        .animate-in {
+            opacity: 0;
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            transform: translateY(20px);
+        }
+
+        /* Apply the animation when the element is visible */
+        .animate-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+            animation: fadeIn 0.6s ease-out;
+        }
+
     </style>
-  </head>
-  <body>
-    
+</head>
+<body>
+
     <!-- Profile -->
     <header>
-      <div class="container">
-        <div class="row justify-content-lg-center">
-          <div class="col-lg-2 text-center">
-            <img src="images/pizza.png" class="user-image rounded-circle">
-          </div>
-          <div class="col-lg-7">
-            <h2>pizzalover125</h2>
-            <p class="text-justify">
-              An aspiring programmer looking to change the world with his code, one line at a time. While I haven’t changed the world yet, each project I build, skill I acquire, and experience I gain brings me closer to that goal. Explore my journey and see what I’ve accomplished so far below:
-            </p>
-            <ul class="list-inline text-lg-right social-icons">
-              <li class="list-inline-item"><a href="https://github.com/pizzalover125" target="_blank"><i class="fab fa-github"></i></a></li>
-              <li class="list-inline-item"><a href="mailto:chessthinker600@gmail.com" target="_blank"><i class="fas fa-at"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fas fa-adjust"></i></a></li>
-            </ul>
-          </div>
+        <div class="container">
+            <div class="row justify-content-lg-center">
+                <div class="col-lg-2 text-center animate-in">
+                    <img src="images/pizza.png" class="user-image rounded-circle">
+                </div>
+                <div class="col-lg-7 animate-in">
+                    <h2>pizzalover125</h2>
+                    <p class="text-justify">
+                        An aspiring programmer looking to change the world with his code, one line at a time. While I haven’t changed the world yet, each project I build, skill I acquire, and experience I gain brings me closer to that goal. Explore my journey and see what I’ve accomplished so far below:
+                    </p>
+                    <ul class="list-inline text-lg-right social-icons">
+                        <li class="list-inline-item"><a href="https://github.com/pizzalover125" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li class="list-inline-item"><a href="mailto:chessthinker600@gmail.com" target="_blank"><i class="fas fa-at"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fas fa-adjust"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </header>
-    
+
     <!-- Skills -->
     <section>
-      <div class="container text-center">
-        <h2>Skills:</h2>
-        <div class="row">
-          <div class="col-md-6 mb-4">
-            <h4>Frontend Frameworks</h4>
-            <img class="mb-4" src="https://skillicons.dev/icons?i=html,flask,svelte">
-          </div>
-          <div class="col-md-6 mb-4">
-            <h4>Frontend Styling</h4>
-            <img class="mb-4" src="https://skillicons.dev/icons?i=css,bootstrap,tailwind">
-          </div>
-          <div class="col-md-6 mb-4">
-            <h4>Backend</h4>
-            <img class="mb-4" src="https://skillicons.dev/icons?i=python,js,jquery">
-          </div>
-          <div class="col-md-6 mb-4">
-            <h4>Databases</h4>
-            <img class="mb-4" src="https://skillicons.dev/icons?i=supabase,sqlite">
-          </div>
-          <div class="col-md-6 mb-4">
-            <h4>AI/ML</h4>
-            <img class="mb-4" src="https://skillicons.dev/icons?i=opencv,tensorflow">
-          </div>
-          <div class="col-md-6 mb-4">
-            <h4>Tooling</h4>
-            <img class="mb-4" src="https://skillicons.dev/icons?i=github,vscode,windows,linux,raspberrypi">
-          </div>
+        <div class="container text-center">
+            <h2 class="animate-in">Skills:</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4 animate-in">
+                    <h4>Frontend Frameworks</h4>
+                    <img class="mb-4" src="https://skillicons.dev/icons?i=html,flask,svelte">
+                </div>
+                <div class="col-md-6 mb-4 animate-in">
+                    <h4>Frontend Styling</h4>
+                    <img class="mb-4" src="https://skillicons.dev/icons?i=css,bootstrap,tailwind">
+                </div>
+                <div class="col-md-6 mb-4 animate-in">
+                    <h4>Backend</h4>
+                    <img class="mb-4" src="https://skillicons.dev/icons?i=python,js,jquery">
+                </div>
+                <div class="col-md-6 mb-4 animate-in">
+                    <h4>Databases</h4>
+                    <img class="mb-4" src="https://skillicons.dev/icons?i=supabase,sqlite">
+                </div>
+                <div class="col-md-6 mb-4 animate-in">
+                    <h4>AI/ML</h4>
+                    <img class="mb-4" src="https://skillicons.dev/icons?i=opencv,tensorflow">
+                </div>
+                <div class="col-md-6 mb-4 animate-in">
+                    <h4>Tooling</h4>
+                    <img class="mb-4" src="https://skillicons.dev/icons?i=github,vscode,windows,linux,raspberrypi">
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Projects -->
     <section class="dark-mode-dark">
-      <div class="container">
-        <h2 class="text-center dark-mode-light">Projects:</h2>
-        <div class="tab-pane fade show mt-4" id="projects" role="tabpanel">
-          <div class="row justify-content-lg-center">
-            <div class="col-lg-8 pb-3">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Cognified</h4>
-                  <p class="card-text">An application containing basic games that have been proven to improve cognitive ability. Designed for all people, but especially effective in seniors. Made with HTML, CSS, JavaScript, and Capacitor.js for mobile support.</p>
-                  <ul class="list-inline social-icons">
-                    <li class="list-inline-item"><a href="https://pizzalover125.github.io/cognified/build/index.html" target="_blank"><i class="fas fa-link"></i></a></li>
-                    <li class="list-inline-item"><a href="https://github.com/pizzalover125/cognified" target="_blank"><i class="fab fa-github"></i></a></li>
-                  </ul>
+        <div class="container">
+            <h2 class="text-center dark-mode-light animate-in">Projects:</h2>
+            <div class="tab-pane fade show mt-4" id="projects" role="tabpanel">
+                <div class="row justify-content-lg-center">
+                    <div class="col-lg-8 pb-3 animate-in">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Cognified</h4>
+                                <p class="card-text">An application containing basic games that have been proven to improve cognitive ability. Designed for all people, but especially effective in seniors. Made with HTML, CSS, JavaScript, and Capacitor.js for mobile support.</p>
+                                <ul class="list-inline social-icons">
+                                    <li class="list-inline-item"><a href="https://pizzalover125.github.io/cognified/build/index.html" target="_blank"><i class="fas fa-link"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://github.com/pizzalover125/cognified" target="_blank"><i class="fab fa-github"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-lg-8 pb-3 animate-in">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">SkimVid</h4>
+                                <p class="card-text">A basic video summarizing web app that takes in a youtube URL and outputs a summary of the video, in a language chosen. Made with Flask, Several Python APIs, HTML, CSS, and Gemini API. *Note that the application will take around a minute to boot up, due to the free server.</p>
+                                <ul class="list-inline social-icons">
+                                    <li class="list-inline-item"><a href="https://video-summary-zayq.onrender.com/" target="_blank"><i class="fas fa-link"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://github.com/pizzalover125/video-summary" target="_blank"><i class="fab fa-github"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-lg-8 pb-3 animate-in">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Digit Predictor</h4>
+                                <p class="card-text">A CNN (Convolutional Neural Network) Model that predicts handwritten digits from 0 to 9, with an HTML wrapper. Made with Python, TensorFlow Python Library, TensorFlow.js, HTML, CSS, and JavaScript.</p>
+                                <ul class="list-inline social-icons">
+                                    <li class="list-inline-item"><a href="https://supercoolai.netlify.app/" target="_blank"><i class="fas fa-link"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://github.com/pizzalover125/digitPredictor" target="_blank"><i class="fab fa-github"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
                 </div>
-              </div>
             </div>
-            <div class="w-100"></div>
-            <div class="col-lg-8 pb-3">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">SkimVid</h4>
-                  <p class="card-text">A basic video summarizing web app that takes in a youtube URL and outputs a summary of the video, in a language chosen. Made with Flask, Several Python APIs, HTML, CSS, and Gemini API. *Note that the application will take around a minute to boot up, due to the free server.</p>
-                  <ul class="list-inline social-icons">
-                    <li class="list-inline-item"><a href="https://video-summary-zayq.onrender.com/" target="_blank"><i class="fas fa-link"></i></a></li>
-                    <li class="list-inline-item"><a href="https://github.com/pizzalover125/video-summary" target="_blank"><i class="fab fa-github"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="w-100"></div>
-            <div class="col-lg-8 pb-3">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Digit Predictor</h4>
-                  <p class="card-text">A CNN (Convolutional Neural Network) Model that predicts handwritten digits from 0 to 9, with an HTML wrapper. Made with Python, TensorFlow Python Library, TensorFlow.js, HTML, CSS, and JavaScript.</p>
-                  <ul class="list-inline social-icons">
-                    <li class="list-inline-item"><a href="https://supercoolai.netlify.app/" target="_blank"><i class="fas fa-link"></i></a></li>
-                    <li class="list-inline-item"><a href="https://github.com/pizzalover125/digitPredictor" target="_blank"><i class="fab fa-github"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="w-100"></div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- Experience -->
     <section class="dark-mode-dark">
-      <h2 class="text-center dark-mode-light">Experience</h2>
-      <div class="container">
-        <div class="row justify-content-lg-center">
-          <div class="col-lg-8 pb-3">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">CyberSeniors Mentor</h4>
-                <p class="card-text">CyberSeniors is a "non-profit organization that offers technology training to older adults and helps students develop digital mentoring skills." I personally assisted seniors for 40+ hours with miscellaneous
-                  tech needs.<p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8 pb-3">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Certifications</h4>
-                <p>In the image carousel below, you can seem some of the certifications I have completed. To interact, simply press the right side to go forward and the left side to go backward.</p>
-                  
-                <!-- Image Carousel -->
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-                    <!-- Images -->
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100" src="images/web.png" alt="Web Development Certification">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="images/frontend.png" alt="Frontend Development Certification">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="images/data.png" alt="Data Analysis Certification">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="images/python.png" alt="Python Certification">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="images/excel.png" alt="Excel Certification">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="images/wordpress.png" alt="Wordpress Certification">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="images/figma.png" alt="Figma Certification">
-                      </div>
+        <h2 class="text-center dark-mode-light animate-in">Experience</h2>
+        <div class="container">
+            <div class="row justify-content-lg-center">
+                <div class="col-lg-8 pb-3 animate-in">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">CyberSeniors Mentor</h4>
+                            <p class="card-text">CyberSeniors is a "non-profit organization that offers technology training to older adults and helps students develop digital mentoring skills." I personally assisted seniors for 40+ hours with miscellaneous tech needs.</p>
+                        </div>
                     </div>
+                </div>
+                <div class="col-lg-8 pb-3 animate-in">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Certifications</h4>
+                            <p>In the image carousel below, you can see some of the certifications I have completed. To interact, simply press the right side to go forward and the left side to go backward.</p>
 
-                    <!-- Controls -->
-                    <a class="carousel-control-prev text-dark" href="#myCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next text-dark" href="#myCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span> 
-                    </a>
+                            <!-- Image Carousel -->
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <!-- Images -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="images/web.png" alt="Web Development Certification">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="images/frontend.png" alt="Frontend Development Certification">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="images/data.png" alt="Data Analysis Certification">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="images/python.png" alt="Python Certification">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="images/excel.png" alt="Excel Certification">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="images/wordpress.png" alt="WordPress Certification">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="images/figma.png" alt="Figma Certification">
+                                    </div>
+                                </div>
 
-                  </div>
-              </div>
+                                <!-- Controls -->
+                                <a class="carousel-control-prev text-dark" href="#myCarousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next text-dark" href="#myCarousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- Footer -->
     <footer class="dark-mode-dark text-center py-4">
-      <div class="container">
-        <p class="dark-mode-light mb-0">Crafted by pizzalover125. </p>
-        <ul class="list-inline social-icons mt-3">
-          <li class="list-inline-item"><a href="https://github.com/pizzalover125" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li class="list-inline-item"><a href="mailto:chessthinker600@gmail.com" target="_blank"><i class="fas fa-at"></i></a></li>
-        </ul>
-      </div>
+        <div class="container">
+            <p class="dark-mode-light mb-0 animate-in">Crafted by pizzalover125.</p>
+            <ul class="list-inline social-icons mt-3">
+                <li class="list-inline-item"><a href="https://github.com/pizzalover125" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li class="list-inline-item"><a href="mailto:chessthinker600@gmail.com" target="_blank"><i class="fas fa-at"></i></a></li>
+            </ul>
+        </div>
     </footer>
 
     <!-- JS Scripts -->
@@ -296,24 +321,41 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function () {
         const themeToggle = document.querySelector('.fa-adjust');
         const htmlElement = document.documentElement;
-    
+
         // Load theme from localStorage
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
-          htmlElement.dataset.bsTheme = savedTheme;
+            htmlElement.dataset.bsTheme = savedTheme;
         }
-    
+
         themeToggle.addEventListener('click', function () {
-          const currentTheme = htmlElement.dataset.bsTheme;
-          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-          htmlElement.dataset.bsTheme = newTheme;
-          localStorage.setItem('theme', newTheme);
+            const currentTheme = htmlElement.dataset.bsTheme;
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            htmlElement.dataset.bsTheme = newTheme;
+            localStorage.setItem('theme', newTheme);
         });
-      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1 
+        });
+
+        document.querySelectorAll('.animate-in').forEach(element => {
+            observer.observe(element);
+        });
+    });
     </script>
-    
-  </body>
+
+</body>
 </html>
